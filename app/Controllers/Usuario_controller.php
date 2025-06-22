@@ -26,7 +26,7 @@ class Usuario_controller extends Controller
             'nombre'    => 'required|min_length[3]|max_length[25]',
             'apellido'  => 'required|min_length[3]|max_length[25]',
             'usuario'=> 'required|min_length[3]|max_length[15]',
-            'email'=> 'required|min_length[3]|max_length[100]|valid_email|is_unique[usuarios.email]',
+            'email'=> 'required|min_length[3]|max_length[100]|valid_email|is_unique[info_usuarios.email]',
             'pass'=> 'required|min_length[3]|max_length[20]'
         ],
         
