@@ -37,6 +37,7 @@ class Usuario_controller extends Controller
     if (!$input){
 
             $data['titulo'] = 'Registrarse';
+            session()->setFlashdata('fail','Usuario no registrado, verifique los datos');
             return view('front/head_view',$data)
             . view('front/navbar_view')
             . view('back/usuario/registro', ['validation' => $this])
@@ -53,7 +54,7 @@ class Usuario_controller extends Controller
             ]);
 
             session()->setFlashdata('success','Usuario registrado con exito');
-            return redirect()->to('/login');
+            return redirect()->to(base_url('/login'));
         }
     }  
 

@@ -1,4 +1,5 @@
 <!--Navegacion-->
+<script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     
