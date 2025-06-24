@@ -1,8 +1,8 @@
 <!--Navegacion-->
-<script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
+
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    
+    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
   <div class="container-fluid">
     <a class="navbar-brand" href="<?php echo base_url('/')?>">
         <img src="<?php echo base_url('assets/img/yorha.png')?>" alt="Logo de nier" width="75" height="50" class="img-fluid">

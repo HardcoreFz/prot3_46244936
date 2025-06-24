@@ -3,12 +3,10 @@
     <div class="text-center"> <h1>Iniciar sesion</h1> </div>
 
 <!-- Mensaje de error-->
-<?php if(!empty (session()->getFlashdata('success'))):?> 
-                            <div class="alert alert-danger"><?=session()->getFlashdata('success'); ?></div> 
+<?php if(!empty (session()->getFlashdata('msg'))):?> 
+                            <div class="alert alert-danger"><?=session()->getFlashdata('msg'); ?></div> 
                         <?php endif?>
-                        <?php if(!empty (session()->getFlashdata('fail'))):?> 
-                            <div class="alert alert-danger"><?=session()->getFlashdata('fail'); ?></div> 
-                        <?php endif?>
+                        
 
     <div class="mb-3">
     <label for="exampleFormControlInput4" class="form-label">Usuario</label>

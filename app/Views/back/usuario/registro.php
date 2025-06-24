@@ -1,5 +1,6 @@
 <div class="container mx-auto text-bg-dark p-4">
     <div class="text-center"> <h1>Registro</h1> </div>
+    <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
     <?php $validation = \Config\Services::validation(); ?> 
                     <form method="post" action="<?php echo base_url('/enviar-form') ?>"> 
                         <?=csrf_field();?>
@@ -35,7 +36,7 @@
     <input name="email" type="text" class="form-control" id="exampleFormControlInput3" placeholder="correo@mail.com" required>
     <?php if($validation->getError('email')) {?> 
                                 <div class='alert alert-danger mt-4'> 
-                                    <?= $error = $validation->getError('usuario'); ?> 
+                                    <?= $error = $validation->getError('email'); ?> 
                                 </div> 
                             <?php }?> 
     </div>

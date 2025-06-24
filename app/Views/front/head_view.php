@@ -14,8 +14,10 @@
 -->
         <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/css/miestilo.css'); ?> " rel="stylesheet">
+
     </head>
     <header>
+        <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
         <h1>Pagina principal</h1>
     </header>
 
