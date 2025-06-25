@@ -8,10 +8,10 @@
             <?php endif?>
            
     
-    <form method="post" action="<?php echo base_url('/enviar-form') ?>">
+    <form method="post" action="<?php echo base_url('/enviarlogin') ?>">
         <div class="mb-3">
-        <label for="exampleFormControlInput4" class="form-label">Usuario</label>
-        <input name="usuario" type="text" class="form-control" id="exampleFormControlInput4" placeholder="Usuario" required>
+        <label for="exampleFormControlInput4" class="form-label">Email</label>
+        <input name="email" type="text" class="form-control" id="exampleFormControlInput4" placeholder="Usuario" required>
         </div>
 
         <div>

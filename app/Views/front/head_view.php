@@ -14,10 +14,10 @@
 -->
         <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/css/miestilo.css'); ?> " rel="stylesheet">
-
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </head>
     <header>
-        <script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
+        
         <h1>Pagina principal</h1>
     </header>
 

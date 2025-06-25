@@ -1,6 +1,6 @@
 <?php
     namespace App\Controllers;
-    use Codeigniter\Controller;
+    use CodeIgniter\Controller;
     use App\Models\Usuario_Model;
 
     class Login_Controller extends Controller
@@ -9,7 +9,7 @@
         {
             helper(['form','url']);
 
-            $data['titulo'] = "Login";
+            $data['titulo'] = 'Login';
             echo view('Views/front/head_view', $data);
             echo view('Views/front/navbar_view');
             echo view('login');
@@ -33,14 +33,14 @@
                 if($ba == 'SI') 
                 {
                     $session->setFlashdata('msg','El usuario se encuentra dado de baja');
-                    return redirect()->to('/login_controller');
+                    return redirect()->to('/login');
                 }
 
                 $verify_pass = password_verify($password, $pass);
                 if($verify_pass)
                 {
                     $ses_data = [
-                        'id_usuario' => $data['id_usuario'],
+                        'usuario_id' => $data['usuario_id'],
                         'nombre' => $data['nombre'],
                         'apellido' => $data['apellido'],
                         'email' => $data['email'],
@@ -54,12 +54,12 @@
                 } else
                 {
                     $session->setFlashdata('msg','Contraseña incorrecta');
-                    return redirect()->to('/login_controller');
+                    return redirect()->to('/login');
                 }
             } else
             {
                 $session->setFlashdata('msg','El usuario no existe');
-                return redirect()->to('/login_controller');
+                return redirect()->to('/login');
             }
         }
         public function logout()

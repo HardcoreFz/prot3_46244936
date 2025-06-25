@@ -14,8 +14,8 @@ $routes->get('login','Home::login');
 /*Rutas del formulario de registro*/ 
 $routes->get('/registro','Usuario_controller::create');
 $routes->post('/enviar-form', 'Usuario_controller::formValidation');
-
-$routes->get('/login','Login_controller');
-$routes->post('/enviar-login','Login_controller::auths');
-$routes->get('/panel','Panel_controller::index',['filter'=> 'auth']);
+/*rutas del login*/
+$routes->get('/login','Login_Controller');
+$routes->post('/enviarlogin','Login_Controller::auth');
+$routes->get('/panel','Panel_Controller::index',['filter'=> 'auth']);
 $routes->get('/logout','Login_controller::logout');

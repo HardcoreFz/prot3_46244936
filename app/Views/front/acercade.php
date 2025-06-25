@@ -1,4 +1,4 @@
-
+<script src="<?= base_url('assets/js/bootstrap.bundle.min.js') ?>"></script>
 <div class="text-bg-secondary p-3 text-center"><h1>SOBRE NOSOTROS</h1></div>
 <div class="text-bg-dark p-3 text-center">YoRHa is an elite military force of advanced androids designed to:</div>
 <div class="text-bg-white p-3 text-center">combat the invading aliens and machine lifeforms. Operating out</div>
