@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-06-2025 a las 07:32:29
+-- Tiempo de generación: 26-06-2025 a las 02:15:40
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `lencinas_gomez_gonzalo_ivan`
 --
+CREATE DATABASE IF NOT EXISTS `lencinas_gomez_gonzalo_ivan` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `lencinas_gomez_gonzalo_ivan`;
 
 -- --------------------------------------------------------
 
@@ -45,10 +47,6 @@ CREATE TABLE `info_usuarios` (
 INSERT INTO `info_usuarios` (`usuario_id`, `nombre`, `apellido`, `usuario`, `email`, `pass`, `perfil_id`, `baja`) VALUES
 (1, 'Lionel', 'Messi', 'Pulga', 'messi@gmail.com', '$2y$10$qem05CR2iocbGuUHFGdFFO5iEfDruIk1rUHhprXDsgi/UOSKtJyXq', 2, 'NO'),
 (2, 'Gonzalo', 'Gomez', 'HardcoreFz', 'harcorefzgamerx@gmail.com', '$2y$10$sUPljGXN.aiW6YQofwjRyuHtKvErbw.GJ8EgqB5Sz0KKaqqJ6B0ru', 2, 'NO'),
-(3, 'Guadita', 'Amorsito', 'WizardGPhoenix', 'guada@gmail.com', '$2y$10$DWTZvUMnA5XoCDPI77Kiq.WeGA9ZrBZDuV7zr1LSP7x8cfyqoIYai', 2, 'NO'),
-(4, 'Buenas', 'tardes', 'sex', 'quyeti@gmail.com', '$2y$10$UtDYRBpslbZsKJ9GwH0FXeTcoxR0NcKabN3Xrmq7qLl4zK2TZs3ZO', 2, 'NO'),
-(5, 'Buenasa', 'tardesa', 'sexa', 'quyetiaa@gmail.com', '$2y$10$MuO1rTnfS4xspoiSfvJHmOBC09Xr3XKrop4XrcDPBV8mZfC9H8D/q', 2, 'NO'),
-(6, 'Buenasaa', 'tardesaa', 'sexaa', 'quyetiaaa@gmail.com', '$2y$10$EYGoDFe2dX4QWcHRP0V.4ORzf6TljmlhivD3OdSOC9rz40UDWUhM6', 2, 'NO'),
 (7, 'test', 'test', 'test', 'test@test.com', '$2y$10$cuF.rOymAg0QVYB9ioVMW.mxZEH903Ts1sO8hqcWwBg5mrLyL5f.a', 2, 'NO'),
 (8, 'test1', 'test1', 'test1', 'test@tes1t.com', '$2y$10$bZPLR/v6KOWZmKU6gh0kCumeh1qXtieeigiSIV5gWOogupcLvQZeG', 2, 'NO'),
 (9, 'testeo', 'tester', 'testeo', 'testeo@gmail.com', '$2y$10$xSFnN1sWT/sDr3pAH3Dch.FV58jM4BvC.x9qzDws79XNnI3IflR7K', 1, 'NO'),
